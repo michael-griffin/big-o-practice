@@ -1,3 +1,4 @@
+"use strict";
 // add whatever parameters you deem necessary & write doc comment
 
 // Can you spell the word using the available letters?
@@ -8,21 +9,20 @@
 
 // letters
 
-
 // evaluate the available letters, record into obj
 // Check if letters in word are available in obj
 // Return true if you are able to spell word,
     //else return false
 
 
-
-
-
+//TODO: possible rename: neededLetters, availableLetters.
+//
 function canConstructWord(word, letters) {
   // evaluate the available letters, record into obj
   const wordBank = {};
   const letterBank = {};
 
+  //Could refactor, make as a function
   for (let char of word){
     const charCount = (wordBank[char] || 0) + 1;
     wordBank[char] = charCount;
