@@ -173,8 +173,8 @@ function pairSum1(arr){
   }
   return maxPair;
 }
-console.log(pairSum1([4, 8, 5, 9, 1]));
-console.log(pairSum1([10, 1, 4, 2, 1]));
+console.log(pairSum1([4, 8, 5, 9, 1])); //17
+console.log(pairSum1([10, 1, 4, 2, 1])); //14
 
 
 //a solution that is easy to write, relies on a JS array methods, and is O(n log n)
@@ -186,8 +186,11 @@ function pairSumSort(arr){
 console.log(pairSumSort([4, 8, 5, 9, 1]));
 console.log(pairSumSort([10, 1, 4, 2, 1]));
 
-//a solution that might be harder to find/understand, but is O(n) */
 
+
+
+
+//a solution that might be harder to find/understand, but is O(n) */
 function pairSumTricky (arr){
   //if arr[0] > arr[1], largest = arr[0]
   //if reverse, largest = arr[1]
@@ -220,8 +223,6 @@ function pairSumTricky (arr){
 
 console.log(pairSumTricky([4, 8, 5, 9, 1]));
 console.log(pairSumTricky([10, 1, 4, 2, 1]));
-
-
 
 //textExpander, aText
 //snippet tool: assign snippets to keyboard shortcuts
